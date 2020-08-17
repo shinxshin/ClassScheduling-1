@@ -19,3 +19,4 @@ The FCFS algorithm use a concept where the process that arrive first are execute
 
 Give an analysis of your algo and compare it with the other two
 
+*Nanti korg edit analysis part algo 3 tau
