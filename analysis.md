@@ -15,8 +15,10 @@ The FCFS algorithm use a concept where the process that arrive first are execute
 
  Pre-emptive SJF work according to the process burst time, with one with the fastest are executed first. as it take the burst time into consideration the waiting time and turn around time are significantly lower. The concept of 'aging' not only solve the resource starvation problem but also reduce the total  computing time. However another problem also arise as the pre-emptive SJF need the burst time of the processes to be known in advance. this may be viable in real life as we cannot determine a student's registration time in advance.
 
-## Algo3
+## Priority Scheduling
 
-Give an analysis of your algo and compare it with the other two
-
-*Nanti korg edit analysis part algo 3 tau
+Priority scheduling is a non-preemptive algorithm and one of the most common scheduling algorithms in batch systems.
+Each process is assigned a priority. Process with highest priority is to be executed first and so on.
+Processes with same priority are executed on first come first served basis. Therefore, as an example, the senior undergraduate level will be priority to register in the student's registration system first until the junior undergraduate level.
+However, a second scheduling algorithm is required to schedule the processes which have same priority.
+In preemptive priority scheduling, a higher priority process can execute ahead of an already executing lower priority process. If lower priority process keeps waiting for higher priority processes, starvation occurs.
