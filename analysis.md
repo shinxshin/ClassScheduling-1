@@ -7,18 +7,16 @@ The main factor that we had considered when choosing the algorithm is the arriva
 
 # Analysis
 
-## FCFS
+Analysis
+FCFS
+Given n course processes with their burst times and arrival times, the task is to find average waiting time and average turn around time using FCFS scheduling algorithm. FIFO simply queues processes in the order they arrive in the ready queue. Here, the process that comes first will be executed first and next process will start only after the previous gets fully executed.
 
-The FCFS algorithm use a concept where the process that arrive first are executed first. as it is a non pre-emptive algorithm, the burst time of the process are not taken into consideration. this may lead to resource starvation and increased computing time. if this algorithm is implemented into the class scheduling process, not only will there be some sort of congestion in fulfilling the request but also an increase in overall registration process. FCFS also has a very high waiting time and turn around time. 
+Algo2 (SJF)
+Start scheduler selects the process from the waiting queue with the least completion time. Shortest course duration First is more desirable than FIFO algorithm because SJF is more optimal as it reduces average wait time which will increase the throughput. This algorithm will consider with the arrival time unlike FCFS and priority scheduling.
 
-##  Pre-emptive Shortest Job First(SJF)
+Stop
 
- Pre-emptive SJF work according to the process burst time, with one with the fastest are executed first. as it take the burst time into consideration the waiting time and turn around time are significantly lower. The concept of 'aging' not only solve the resource starvation problem but also reduce the total  computing time. However another problem also arise as the pre-emptive SJF need the burst time of the processes to be known in advance. this may be viable in real life as we cannot determine a student's registration time in advance.
+Algo3 (priority shceduling)
+Priority scheduling is an unprotected algorithm and one of the most common scheduling algorithms in batch systems. Each process is scheduled for its first arrival. (Arrival steps less than before) If two processes have the same arrival time, compare with the priority. (Top Process First) Also, if two processes have the same priority, compare them with process numbers. (Less than previous process number)
 
-## Priority Scheduling
-
-Priority scheduling is a non-preemptive algorithm and one of the most common scheduling algorithms in batch systems.
-Each process is assigned a priority. Process with highest priority is to be executed first and so on.
-Processes with same priority are executed on first come first served basis. Therefore, as an example, the senior undergraduate level will be priority to register in the student's registration system first until the junior undergraduate level.
-However, a second scheduling algorithm is required to schedule the processes which have same priority.
-In preemptive priority scheduling, a higher priority process can execute ahead of an already executing lower priority process. If lower priority process keeps waiting for higher priority processes, starvation occurs.
+This algorithm consider the importance of course unlike FCFS and SJF.
